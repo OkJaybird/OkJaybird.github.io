@@ -7,3 +7,8 @@ background: andrew-kliatskyi-DQorphiX7oE-unsplash.jpg
 
 github-user: 'okjaybird'
 email: 'hello@okjaybird.com'
+
+plugins:
+  - jekyll-remote-theme
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', '.travis.yml', 'vendor']
