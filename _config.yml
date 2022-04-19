@@ -1,6 +1,7 @@
-remote_theme: epidrome/cover-card@e73ebb1e6373346258583a02b85ac798d1c43b4e
-
 title: okjaybird
+description: okjaybird
+
+remote_theme: epidrome/cover-card@main
 
 avatar: https://avatars.githubusercontent.com/u/1078805
 background: andrew-kliatskyi-DQorphiX7oE-unsplash.jpg
@@ -8,7 +9,18 @@ background: andrew-kliatskyi-DQorphiX7oE-unsplash.jpg
 github-user: 'okjaybird'
 email: 'hello@okjaybird.com'
 
+social-links-order: [github-user, email]
+
+social-links:
+  - name: github-user
+    url-pattern: github.com/__USERNAME__
+    icon-class: fab fa-2x fa-github
+  - name: email
+    url-scheme: 'mailto:'
+    url-pattern: '__USERNAME__'
+    icon-class: far fa-2x fa-envelope-open
+
 plugins:
   - jekyll-remote-theme
 
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', '.travis.yml', 'vendor']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'vendor']
